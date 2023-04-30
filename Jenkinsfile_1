@@ -1,14 +1,13 @@
-//Jenkins file only to tutorial example
 pipeline {
   agent any
     
-  tools {nodejs "node"}
+  tools {nodejs "npm"}
     
   stages {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/gustavoapolinario/node-todo-frontend'
+        git 'https://github.com/powpat83/node-todo-frontend'
       }
     }
         
